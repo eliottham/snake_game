@@ -6,19 +6,20 @@
 
 #grid {
 	position: absolute;
+	background-color: black;
+	border: 1px solid black;
 	top: 50%;
 	left: 50%;
-	width: 600px;
+	width: auto;
+	height: auto;
 	margin: -300px 0 0 -300px;
 }
 
 div[id^="pt"] {
-	border: 1px solid black;
+	border: 1px;
 	height: 15px;
 	width: 15px;
 	float: left;
-	text-align: center;
-	line-height: 15px;
 }
 
 
@@ -26,14 +27,18 @@ div[id$="-0"] {
 	clear: left;
 }
 
+input {
+	position: absolute;
+	width: 300px;
+	left: 50%;
+	margin-left: -150px;
+	top: 5%;
+}
+
 .snake {
-	background-color: red;
+	background-color: #01FEC3;
 }
 
 .food {
-	background-color: blue;
-}
-
-.crash {
-	background-color: green;
+	background-color: #FE47E0;
 }

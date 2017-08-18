@@ -52,8 +52,6 @@ $(document).ready(function() {
 	function move() {
 		if((snake.position[0] <= 0 && snake.direction == 'u') || (snake.position[1] <= 0 && snake.direction == 'l')
 			 || (snake.position[0] >= 39 && snake.direction == 'd') || (snake.position[1] >= 39 && snake.direction == 'r')) {
-					grid[snake.position[0]][snake.position[1]].addClass('crash');
-			 	  console.log('game over');
 					return clearInterval(turn);
 		}
 
@@ -80,8 +78,6 @@ $(document).ready(function() {
 		current_snake.slice(current_snake.length - snake.size, current_snake.length).forEach(
 			function(position) {
 				if(position.join() == snake.position.join()) {
-					grid[snake.position[0]][snake.position[1]].addClass('crash');
-					console.log('game over');
 					return clearInterval(true);
 				}
 			}
@@ -137,7 +133,7 @@ $(document).ready(function() {
 	function randInt(min, max) {
 	    return Math.floor(Math.random() * (max - min + 1) ) + min;
 	}
-	
+
 	game();
 	$('input').click(game);
 });
