@@ -34,3 +34,6 @@ div[id$="-0"] {
 	background-color: blue;
 }
 
+.crash {
+	background-color: green;
+}
