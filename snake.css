@@ -8,19 +8,25 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	width: 400px;
-	margin: -200px 0 0 -200px;
+	width: 600px;
+	margin: -300px 0 0 -300px;
 }
 
 div[id^="pt"] {
 	border: 1px solid black;
-	height: 10px;
-	width: 10px;
+	height: 15px;
+	width: 15px;
 	float: left;
+	text-align: center;
+	line-height: 15px;
 }
 
 
 div[id$="-0"] {
 	clear: left;
+}
+
+.snake {
+	background-color: red;
 }
 
